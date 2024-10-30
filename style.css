@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 80px;
+  width: 100;
+  /* background-color: rgb(231, 182, 182); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+#nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+#circle1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#nav-2 h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#nav-2 h4 span {
+  color: rgb(114, 62, 224);
+  margin-left: 25px;
+}
+
+#circle2 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#nav-3 {
+  height: 80px;
+  width: 100%;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding: 0 40px;
+
+  /* justify-content: center; */
+}
+
+#nav-3 h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#content {
+  height: calc(100% - 160px);
+  width: 100%;
+  /* background-color: rgb(143, 143, 237); */
+}
+
+#text-content {
+  height: 48%;
+  width: 100%;
+  /* background-color: crimson; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#text-content ::-webkit-scrollbar {
+  /* display: none; */
+  background-color: transparent;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+  background-color: rgb(214, 77, 9);
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 100%;
+  width: 60%;
+  /* background-color: cyan; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elem h1 {
+  font-size: 130px;
+  font-weight: 200;
+}
+
+#image-content {
+  height: 53%;
+  width: 100%;
+  background-color: chocolate;
+  display: flex;
+  overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar {
+  display: none;
+}
+#image-content img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 25%;
+}
